@@ -22,11 +22,11 @@ If you want to test or see the project, here are some recomendations:
  ```
      <VirtualHost *:80>
          ServerAdmin somerandomemail@gmail.com 
-         DocumentRoot "C:/xampp7/htdocs/ecommerce" <-- Here you need to change the path 
+         DocumentRoot "C:/xampp7/htdocs/ecommerce-php7" <-- Here you need to change the path 
          ServerName www.hcodecommerce.com.br <-- The host configuration that you applied in hosts
          ErrorLog "logs/dummy-host2.example.com-error.log"
          CustomLog "logs/dummy-host2.example.com-error.log" common
-         <Directory "C:/xampp7/htdocs/ecommerce"> <-- Change the path here too
+         <Directory "C:/xampp7/htdocs/ecommerce-php7"> <-- Change the path here too
              Require all granted
 
              RewriteEngine on
