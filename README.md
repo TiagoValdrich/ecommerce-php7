@@ -1,4 +1,4 @@
-#E-commerce Project
+# E-commerce Project
 
 This is a project was developed in Udemy's course: [Curso de PHP 7](https://www.udemy.com/curso-completo-de-php-7/).
 
