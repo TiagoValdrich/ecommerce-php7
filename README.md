@@ -1,8 +1,8 @@
 # E-commerce Project
 
-This is a project was developed in Udemy's course: [Curso de PHP 7](https://www.udemy.com/curso-completo-de-php-7/).
+This is a project that was developed in Udemy's course: [Curso de PHP 7](https://www.udemy.com/curso-completo-de-php-7/).
 
-The template that was used is: [Almsaeed Studio](https://almsaeedstudio.com).
+The template that i'm using is: [Almsaeed Studio](https://almsaeedstudio.com).
 
 ## Testing/see the project
 
