@@ -73,7 +73,7 @@
 
             $data = $results[0];
 
-            if ( password_verify($password, $data["despassword"]) === true )
+            if ( password_verify($password, $data["despassword"]) )
             {
 
                 $user = new User();
