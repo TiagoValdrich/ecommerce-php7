@@ -39,7 +39,7 @@
 
             } else {
 
-                if ($inadmin === true && $_SESSION[User::SESSION]['inadmin'] === true) {
+                if ($inadmin === true && (bool)$_SESSION[User::SESSION]['inadmin'] === true) {
 
                     return true;
 
@@ -103,11 +103,11 @@
 
               if ($inadmin) {
 
-                  header("Location: /admin/login");
+                header("Location: /admin/login");
 
               } else {
 
-                  header("Location: /login");
+                header("Location: /login");
 
               }
 
