@@ -175,6 +175,12 @@
 
       }
 
+      if (!$address->getdesnumber()) {
+
+        $address->setdesnumber('');
+
+      }
+
       if (!$address->getdescomplement()) {
 
         $address->setdescomplement('');
