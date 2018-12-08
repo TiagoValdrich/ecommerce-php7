@@ -310,8 +310,25 @@
 
       $order->save();
 
-      //Se for pagseguro
-      //header("Location: /order/".$order->getidorder()."/pagseguro");
+      switch ($_POST['payment-method']) {
+
+        case 1:
+          // Se for pagseguro
+          header("Location: /order/".$order->getidorder()."/pagseguro");
+        exit;
+
+        case 2:
+          // Se for paypal
+          header("Location: /order/".$order->getidorder()."/paypal");
+        exit;
+
+        case 3:
+          // Boletão
+          header("Location: /order/".$order->getidorder());
+        exit;
+
+      }
+      
       header("Location: /order/".$order->getidorder());
       exit;
 
@@ -341,6 +358,31 @@
             'areaCode' => substr($order->getnrphone(), 0, 2),
             'number' => substr($order->getnrphone(), 2, strlen($order->getnrphone()))
           )
+
+      ));
+
+    });
+
+    $app->get("/order/:idorder/paypal", function($idorder){
+
+      User::verifyLogin(false);
+
+      $order = new Order();
+
+      $order->get((int)$idorder);
+
+      $cart = $order->getCart();
+
+      $page = new Page(array(
+        'header' => false,
+        'footer' => false
+      ));
+
+      $page->setTpl("payment-paypal", array(
+
+          'order' => $order->getValues(),
+          'products' => $cart->getProducts(),
+          'cart' => $cart->getValues()
 
       ));
 

@@ -113,6 +113,24 @@
 													</tr>
 												</tfoot>
 											</table>
+
+											<p id="billing_payment-method1_field" class="form-row form-row-first payment-method-field" data-o_class="form-row form-row-first payment-method-field">
+												<input type="radio" style="float: left; margin: 30px;" id="payment-method1" name="payment-method" value="1" class="input-radio">
+												<label for="payment-method1"><img style="height:64px;" src="/res/site/img/logo-pagseguro.png"></label>
+											</p>
+
+											<p id="billing_payment-method2_field" class="form-row form-row-first payment-method-field" data-o_class="form-row form-row-first payment-method-field">
+												<input type="radio" style="float: left; margin: 30px;" id="payment-method2" name="payment-method" value="2" class="input-radio">
+												<label for="payment-method2"><img style="height:64px;" src="/res/site/img/logo-paypal.png"></label>
+											</p>
+
+											<p id="billing_payment-method3_field" class="form-row form-row-first payment-method-field" data-o_class="form-row form-row-first payment-method-field">
+												<input type="radio" checked style="float: left; margin: 30px;" id="payment-method3" name="payment-method" value="3" class="input-radio">
+												<label for="payment-method3"> <strong> Boleto Bancário </strong> </label>
+											</p>
+
+											<br/><br/>
+
 											<div id="payment">
 												<div class="form-row place-order">
 													<input type="submit" data-value="Place order" value="Continuar" id="place_order" name="woocommerce_checkout_place_order" class="button alt">
